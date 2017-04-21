@@ -38,14 +38,24 @@ gulp.task('nui', function(){
         <th>说明</th>
     </tr>
     <tr>
+        <td>base</td>
+        <td>string</td>
+        <td>项目硬盘路径，设置后将会覆盖paths中的base，一般写法都是 __dirname+'/路径'</td>
+    </tr>
+    <tr>
         <td>paths</td>
         <td>object {别名:路径,别名:路径,..}</td>
-        <td>路径别名，和Nui.config中的paths对应，若别名中存在base，则其它别名路径都会被重新设置为base路径+别名路径</td>
+        <td>设置路径别名，和Nui.config中的paths对应，不过base要设置为硬盘路径</td>
     </tr>
     <tr>
         <td>alias</td>
         <td>object {别名:路径,别名:路径,..}</td>
-        <td>模块别名，和Nui.config中的alias对应，值中可以通过{别名}访问paths中的别名路径</td>
+        <td>设置模块别名，和Nui.config中的alias对应</td>
+    </tr>
+    <tr>
+        <td>config</td>
+        <td>string</td>
+        <td>Nui配置文件路径，设置后会读取文件中Nui.config中的paths和alias属性作为参数选项，使用该参数可以省略paths和alias设置</td>
     </tr>
     <tr>
         <td>ignore</td>
@@ -76,6 +86,11 @@ gulp.task('nui', function(){
         <td>jsmin</td>
         <td>boolean, object</td>
         <td>默认true，是否合并依赖模块并压缩，会在入口模块所在文件夹中生成“入口模块名-min.js”，当值为对象时，可配置压缩选项<a href="https://github.com/mishoo/UglifyJS2" target="_blank">查看参数配置</a></td>
+    </tr>
+    <tr>
+        <td>changed</td>
+        <td>boolean</td>
+        <td>默认true，是否只输出修改过的文件流</td>
     </tr>
     <tr>
         <td>filterPath</td>
