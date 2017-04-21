@@ -16,8 +16,8 @@ gulp.task('nui', function(){
             base:__dirname+'/'
         },
         alias:{
-			'common':'{base}libs/common.js'
-		},
+            'common':'{base}libs/common.js'
+        },
         ignore:[
             'placeholder'
         ],
@@ -53,9 +53,9 @@ gulp.task('nui', function(){
         <td>设置模块别名，和Nui.config中的alias对应</td>
     </tr>
     <tr>
-        <td>config</td>
+        <td>url</td>
         <td>string</td>
-        <td>Nui配置文件路径，设置后会读取文件中Nui.config中的paths和alias属性作为参数选项，使用该参数可以省略paths和alias设置</td>
+        <td>Nui配置文件路径，设置后会读取文件中paths和alias属性作为参数选项，使用该参数可以省略paths和alias设置</td>
     </tr>
     <tr>
         <td>ignore</td>
