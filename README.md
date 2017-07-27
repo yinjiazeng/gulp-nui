@@ -75,10 +75,11 @@ gulp.task('nui', function(){
     <tr>
         <td>cssmin</td>
         <td>boolean, function</td>
-        <td>默认true，是否合并依赖模块并压缩，会在入口模块所在文件夹的同级style文件夹中（没有则自动创建）生成“入口模块名-min.css”，当设置为函数时，接收一个参数为合并后的内容，若你的代码中使用less或者sass，可以在函数中将内容转为正常的css内容，然后返回这个内容即可。</td>
+        <td>默认true，是否合并依赖模块并压缩，会在入口模块所在文件夹的同级style文件夹中（没有则自动创建）生成“入口模块名-min.css”，当设置为对象时，为css压缩选项，
+        <a href="https://github.com/jakubpawlowicz/clean-css/tree/v3.0.1#how-to-use-clean-css-programmatically" target="_blank">参考clean-css</a>，默认advanced为false，compatibility为ie7。</td>
     </tr>
     <tr>
-        <td>jsdebug</td>
+        <td>cssdebug</td>
         <td>boolean</td>
         <td>默认true，是否生成sourcemap调试文件，方便压缩文件调试</td>
     </tr>
@@ -86,6 +87,11 @@ gulp.task('nui', function(){
         <td>jsmin</td>
         <td>boolean, object</td>
         <td>默认true，是否合并依赖模块并压缩，会在入口模块同目录生成“入口模块名-min.js”，当值为对象时，可配置压缩选项<a href="https://github.com/mishoo/UglifyJS2" target="_blank">查看参数配置</a></td>
+    </tr>
+    <tr>
+        <td>jsdebug</td>
+        <td>boolean</td>
+        <td>默认true，是否生成sourcemap调试文件，方便压缩文件调试</td>
     </tr>
     <tr>
         <td>changed</td>
