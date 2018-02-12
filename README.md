@@ -128,6 +128,12 @@ gulp.task('nui', function(){
 </table>
 
 ## Versions
+#### v2.2.8
+1.修复模块打包不全的bug
+
+#### v2.2.7
+1.修复require模块名中包含“./extend”,模块不打包问题
+
 #### v2.2.6
 1.修复css模块依赖加载顺序错误bug，依赖的文件应该被先加载
 ```js
