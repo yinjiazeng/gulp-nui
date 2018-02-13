@@ -18,8 +18,8 @@ gulp.task('nui', function(){
             node:'/node_modules/'
         },
         alias:{
-			'common':'{base}libs/common.js'
-		},
+	    'common':'{base}libs/common.js'
+	},
         cssdebug:true,
         jsmin:{
             mangle:false
