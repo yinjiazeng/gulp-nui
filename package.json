@@ -1,0 +1,89 @@
+{
+  "_args": [
+    [
+      "gulp-nui@^1.1.4",
+      "E:\\wwwroot\\nui"
+    ]
+  ],
+  "_from": "gulp-nui@2.3.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/gulp-nui",
+  "_nodeVersion": "6.2.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/gulp-nui-1.1.5.tgz_1489073959733_0.5244548020418733"
+  },
+  "_npmUser": {
+    "email": "yinjiazeng@163.com",
+    "name": "yinjiazeng"
+  },
+  "_npmVersion": "3.8.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "gulp-nui",
+    "raw": "gulp-nui@^1.1.4",
+    "rawSpec": "^1.1.4",
+    "scope": null,
+    "spec": ">=1.1.4 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gulp-nui/-/gulp-nui-1.1.5.tgz",
+  "_shasum": "9609557b74a9b3de685b1975fc39d092b181ff86",
+  "_shrinkwrap": null,
+  "_spec": "gulp-nui@^1.1.4",
+  "_where": "E:\\wwwroot\\nui",
+  "author": "yinjiazeng",
+  "bugs": {
+    "url": "https://github.com/axnfex/gulp-nui/issues"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "less": "^2.7.2",
+    "less-plugin-clean-css": "^1.5.1",
+    "node.extend": "^2.0.0",
+    "through2": "^2.0.0",
+    "uglify-js": "^2.7.5"
+  },
+  "description": "Nui框架自动化工具，集成模块合并压缩版本修改",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "less": "^2.7.2",
+    "less-plugin-clean-css": "^1.5.1",
+    "node.extend": "^2.0.0",
+    "through2": "^2.0.0",
+    "uglify-js": "^2.7.5"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "9609557b74a9b3de685b1975fc39d092b181ff86",
+    "tarball": "https://registry.npmjs.org/gulp-nui/-/gulp-nui-1.1.5.tgz"
+  },
+  "homepage": "https://github.com/axnfex/gulp-nui",
+  "keywords": [
+    "nui",
+    "nuiconcat",
+    "nuirev",
+    "nuimin",
+    "jsmin",
+    "cssmin"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    "yinjiazeng <yinjiazeng@163.com>"
+  ],
+  "name": "gulp-nui",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/axnfex/gulp-nui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.3.4"
+}
